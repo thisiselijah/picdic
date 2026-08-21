@@ -1,0 +1,31 @@
+# build/run artifacts
+exams/*/synth/*.v
+exams/*/synth/*.json
+exams/*/pnr/*.def
+exams/*/pnr/*.gds
+exams/*/pnr/*.enc
+exams/*/reports/*.rpt
+exams/*/sim/obj_dir/
+exams/*/sim/*.fst
+exams/*/sim/*.vcd
+!exams/_template/**
+
+# PDKs / vendor libs (fetch separately, don't commit)
+common/pdk/
+*.lib
+*.lef
+*.gds
+
+# tool logs/caches
+*.log
+.Xil/
+work/
+transcript
+
+# python (uv)
+.venv/
+__pycache__/
+*.pyc
+
+# OS
+.DS_Store
